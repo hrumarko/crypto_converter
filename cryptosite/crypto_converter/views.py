@@ -3,4 +3,11 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Hello')
+    form = ''
+    ctx = {
+        'form': form
+    }
+
+    return render(
+        request, 'crypto_converter/index.html', ctx
+    )

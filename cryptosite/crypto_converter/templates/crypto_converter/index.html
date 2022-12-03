@@ -7,8 +7,11 @@
     <title>CryptoConverter</title>
 </head>
 <body>
-    <form action="">
+    <form method="post">
+        {% csrf_token %}
         {{form.as_p}}
+        <button type="submit">Count</button>
     </form>
+    <p>{{result}}</p>
 </body>
 </html>

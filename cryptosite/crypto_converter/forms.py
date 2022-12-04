@@ -1,14 +1,8 @@
 from django import forms
-
-currencies = [
-    ('BTC', 'BTC'),
-    ('UAH', 'UAH'),
-    ('ETH', 'ETH'),
-    ('SOL', 'SOL'),
-]
+from . import currencies
 
 
 class ConvertForm(forms.Form):
     amount = forms.DecimalField(min_value=0)
-    give = forms.ChoiceField(choices=currencies)
-    take = forms.ChoiceField(choices=currencies)
+    give = forms.ChoiceField(choices=currencies.get_currencies())
+    take = forms.ChoiceField(choices=currencies.get_currencies())

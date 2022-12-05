@@ -13,9 +13,9 @@ def index(request):
         give = currencies.translate_crypto(give)
         print(f'give = {give}, take = {take}')
         price = currencies.get_price(amount, give, take)
-        
+
     else:
-        amount = 0
+        price = 0
         form = ConvertForm()
 
     ctx = {

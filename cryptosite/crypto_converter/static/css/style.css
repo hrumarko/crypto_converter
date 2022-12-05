@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-forms{
+    width: 892px;
+    height: 240px;
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+    background-color: aqua;
+}
+.main-forms *{
+    padding: 5px 0;
+
+}
+.amount{
+    margin: 0% 25%;
+    width: 50%;
+    font-size: larger;
+}
+.exchange{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.give-ch{
+    width: 37%;
+    
+}
+
+.take-ch{
+    width: 37%;
+}
+
+.swap{
+    width: 17%;
+
+}
+
+.count{
+    width: 100%;
+}
+
+.price{
+    text-align: center;
+}
